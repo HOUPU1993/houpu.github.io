@@ -6,24 +6,21 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
         body { font-family: Arial, sans-serif; }
-        .map { height: 400px; width: 600px; }  
+        .map { height: 400px; width: 600px; }
         .container { margin: 20px; }
         pre { background-color: #f4f4f4; padding: 15px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Title: XXXXXXXXX</h1>
-        <h2>Subtitle: XXXXXXXXX</h2>
-        <p>[Introduction]: xxxxxxxxx</p>
+        <h1>Title: 主标题</h1>
+        <h2>Subtitle: 副标题</h2>
+        <p>[Introduction]: 这是介绍文本</p>
         <pre>
-// Part I: 地图初始化和标记
-L.marker([51.505, -0.09]).addTo(map1)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
+// 地图代码已移除标记和弹出窗口
         </pre>
         <div id="map1" class="map"></div>
-        <p>[Description]: xxxxxxxx</p>
+        <p>[Description]: 地图描述</p>
     </div>
     <script>
         var map1 = L.map('map1').setView([51.505, -0.09], 13);
@@ -34,11 +31,11 @@ L.marker([51.505, -0.09]).addTo(map1)
     </script>
 
     <div class="container">
-        <p>[Description]: xxxxxxxx</p>
+        <p>[Description]: 第二个地图描述</p>
         <div id="map2" class="map"></div>
     </div>
     <script>
-        var map2 = L.map('map2').setView([51.505, -0.15], 13);  
+        var map2 = L.map('map2').setView([51.505, -0.15], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
