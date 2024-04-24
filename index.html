@@ -6,56 +6,43 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
         body { font-family: Arial, sans-serif; }
-        #map { height: 400px; width: 600px; }
+        .map { height: 400px; width: 600px; }  
         .container { margin: 20px; }
         pre { background-color: #f4f4f4; padding: 15px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Title: XXXXXXXXXXX</h1>
-        <h2>Subtitle: XXXXXXXXXXXXXXXXXXXXXXX</h2>
+        <h1>Title: XXXXXXXXX</h1>
+        <h2>Subtitle: XXXXXXXXX</h2>
         <p>[Introduction]: xxxxxxxxx</p>
         <pre>
-
-# Part I: xxxxx            
-L.marker([51.505, -0.09]).addTo(map)
+// Part I: 地图初始化和标记
+L.marker([51.505, -0.09]).addTo(map1)
     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
     .openPopup();
         </pre>
-        <div id="map"></div>
-        <p>[Description]: xxxxxxxxx</p>
+        <div id="map1" class="map"></div>
+        <p>[Description]: xxxxxxxx</p>
     </div>
     <script>
-        var map = L.map('map').setView([51.505, -0.09], 13);
+        var map1 = L.map('map1').setView([51.505, -0.09], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
-        }).addTo(map);
-        L.marker([51.505, -0.09]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-            .openPopup();
+        }).addTo(map1);
     </script>
 
-
-# Part II: xxxxx            
-L.marker([51.505, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
-        </pre>
-        <div id="map"></div>
-        <p>[Description]: xxxxxxxxx</p>
+    <div class="container">
+        <p>[Description]: xxxxxxxx</p>
+        <div id="map2" class="map"></div>
     </div>
     <script>
-        var map = L.map('map').setView([51.505, -0.09], 13);
+        var map2 = L.map('map2').setView([51.505, -0.15], 13);  
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
-        }).addTo(map);
-        L.marker([51.505, -0.09]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-            .openPopup();
+        }).addTo(map2);
     </script>
-    
 </body>
 </html>
