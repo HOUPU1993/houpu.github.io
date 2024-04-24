@@ -1,38 +1,27 @@
-# The Study of Factors Influence on Income Inequality in California
+# Prject Title: This is a template written by Houpu for Urban Data Science
 
-by Yanyao Cui
+by Houpu Li
 
 ## 01.The Brief Summary of the Topic
-Regional income inequality represents a critical challenge within the domain of social science, influenced by a lot of factors. This study embarks on an initial investigation with the relationship between the Gini index(a measure of income distribution within a population) and several determinants over a decade (2012-2021) in CA. These determinants include education levels, and racial composition. Through this exploration, the research aims to contribute to a deeper understanding of how these variables interact with income inequality across different regions.The API allowing me to fetch the American Community Survey (ACS) five-year data from the 2012-2021 , with census tracts as the smallest unit of analysis.
+xxxxxxxxxxx[description].
+- [literature review1](https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1013&context=math_compsci).
+- [literature review2](https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1013&context=math_compsci).
+- [literature review3](https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1013&context=math_compsci).
 
-## 02.Accessing the Dataset by API
-The dataset comes from US.Bureau, can be divided into responding variable and Explanatory Variables.
+## 02.Accessing the Dataset
+xxxxxxxxxxx[description].
+
 ### Responding Variable
-The Gini Index, a widely used metric for assessing income inequality(Farris,F.A,2010), provides valuable insights into the socioeconomic disparities within a population. At the Census Tract level, a more granular examination of these disparities becomes possible, making it an essential tool for understanding localized inequalities. 
-- [Farris, F. A. (2010). The Gini index and measures of inequality. The American Mathematical Monthly, 117(10), 851-864.](https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1013&context=math_compsci).
-
+xxxxxxxxxxx[description].
 ACS has published the table ***[B19083(Gini Index of income inequality)](https://data.census.gov/table?q=B19083:%20Gini%20Index%20of%20Income%20Inequality&g=010XX00US$1400000)*** from 2010-2021, and you can click the link to review it.
 
 ### Explanatory Variable
-I reviewed some literatures and find several factors(racial composition and educational level) maybe have correlation with regioanl income inequality. Specifically,   
+xxxxxxxxxxx[description].   
+ACS has published the table ***[B19083(Gini Index of income inequality)](https://data.census.gov/table?q=B19083:%20Gini%20Index%20of%20Income%20Inequality&g=010XX00US$1400000)*** from 2010-2021, and you can click the link to review it.
 
-On the impact of race on income disparities: The report from Federal Reserve System(FEDS) showed that in the United States, the average income of Black and Hispanic or Latino families is about half that of White families, while their net wealth is only 15% to 20% of that of White families. This reflects a trend: White families are typically more capable of accumulating and growing wealth over time, and increasingly distance far from other racial groups(This disparity may be due to differences in savings capacity, opportunities to acquire high-return assets, and other factors). Among minorities, homeownership—a common means of wealth accumulation in recent years—is becoming declining in Black communities, exacerbating wealth disparities(Aladangady.et ,2021).
-- [Aladangady, A., & Forde, A. (2021). Wealth inequality and the racial wealth gap](https://www.federalreserve.gov/econres/notes/feds-notes/wealth-inequality-and-the-racial-wealth-gap-20211022.html?utm_medium=Partnership&utm_source=powertofly&utm_campaign=How_the_Climate_Gap_Exacerbates_DEIB_Issues_%E2%80%94_And_6_Things_You_Can_Do_About_It&utm_content=How_the_Climate_Gap_Exacerbates_DEIB_Issues_%E2%80%94_And_6_Things_You_Can_Do_About_It).
-
-On the impact of education level on income inequality: Education affects both ends of the income distribution, For the poor, education is a crucial means to transcend social classes and acquire knowledge. Higher education often translates to better job opportunities and higher salaries, helping them escape poverty. In contrast, for the wealthy, the direct impact of education is minimal as their primary income often derives from capital investments such as real estate and stocks, rather than wages. Therefore, the effect of education on the income of the wealthy is relatively weaker(Abdullah.et,2015).
-- [Abdullah, A., Doucouliagos, H., & Manning, E. (2015). Does education reduce income inequality? A meta‐regression analysis. Journal of Economic Surveys, 29(2), 301-316](https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12056).
-
-Even though there are also some other factors maybe have influence on income inequality, but in this study, I only want to operate a preliminary analysis, focusing on racial and educational factors. I use API to fetch relevant data as below,
-- racial characteristics,***[B02001(Race)](https://data.census.gov/table?q=B02001&g=010XX00US$1400000)***
-- education level,***[B15003(Educational Attainment for the Population 25 Years and Over)](https://data.census.gov/table?q=B15003&g=010XX00US$1400000)***
-
-## 03.Determine the Scope of the Study
-In my research focusing on California, I referenced data from [Wikipedia](https://en.wikipedia.org/wiki/List_of_counties_in_California) and noted that there are 58 counties in the state. I grouped the data by county name and calculated the total population for each. From 2012 to 2021, I found that the sum population of the top 20 counties represents approximately 88.6% to 88.8% of the entire population of California's counties. Therefore, I believe these 20 counties provide a representative sample of the overall situation in California.
-![population_top_20_counties](image/population_top_20_counties.png)
-
-## 04.Data Visualization by Pivot Table
-I analyzed the distribution of the Mean Gini Index across the 20 most populous counties in California over several years, visualizing the results with a pivot table. This analysis was designed to identify trends and variations in income inequality within these 20 counties.
-![pivot_table](image/pivot_table.png)
+## 04.Data Visualization
+xxxxxxxxxxx[description].
+![figure1](image/figure1.png)
 
 ## 05.Data Visualization by Kdeplot
 Since the Gini Index is aggregated at the county level, the figure above only displays the annual average Gini coefficients for the top 20 most populous counties in California, while the figure below includes Gini Index over a decade at all tract level, the detailed tract-level analysis allows for a more granular understanding of income inequality, which might be masked in a broader county-level analysis.Finally, I find both of these two figures identify the San Francisco County as an outlier, with a significant rightward shift in its distribution. This trend may be attributed to difference in the SF county' population composition.
