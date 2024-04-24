@@ -13,24 +13,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>主标题: 交互式地图示例</h1>
-        <h2>副标题: 使用 Leaflet 创建地图</h2>
-        <p>这是一个简单的示例，展示如何在网页上使用 Leaflet 创建一个交互式地图。以下是本示例的 JavaScript 代码：</p>
+        <h1>Title: XXXXXXXXXXX</h1>
+        <h2>Subtitle: XXXXXXXXXXXXXXXXXXXXXXX</h2>
+        <p>[Introduction]: xxxxxxxxx</p>
         <pre>
-// 初始化地图
-var map = L.map('map').setView([51.505, -0.09], 13);
-// 添加瓦片图层
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-// 添加标记和弹出窗口
+
+# Part I: xxxxx            
 L.marker([51.505, -0.09]).addTo(map)
     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
     .openPopup();
         </pre>
         <div id="map"></div>
-        <p>查看上面的地图，了解 Leaflet 的基本功能！</p>
+        <p>[Description]: xxxxxxxxx</p>
     </div>
     <script>
         var map = L.map('map').setView([51.505, -0.09], 13);
@@ -42,5 +36,26 @@ L.marker([51.505, -0.09]).addTo(map)
             .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
             .openPopup();
     </script>
+
+
+# Part II: xxxxx            
+L.marker([51.505, -0.09]).addTo(map)
+    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .openPopup();
+        </pre>
+        <div id="map"></div>
+        <p>[Description]: xxxxxxxxx</p>
+    </div>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+        L.marker([51.505, -0.09]).addTo(map)
+            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            .openPopup();
+    </script>
+    
 </body>
 </html>
